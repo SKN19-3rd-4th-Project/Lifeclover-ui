@@ -1,0 +1,125 @@
+/* Diary Styles */
+.diary {
+  background: linear-gradient(135deg, #fef9e3 0%, #f9f6e8 100%);
+  min-height: calc(100vh - 90px);
+  padding: 60px 40px;
+}
+
+.diary-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.diary-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #565656;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.diary-input-section {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.diary-textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 16px;
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Pretendard Variable', sans-serif;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.diary-textarea:focus {
+  outline: none;
+  border-color: #c2e299;
+  box-shadow: 0 0 0 3px rgba(194, 226, 153, 0.1);
+}
+
+.diary-submit {
+  align-self: flex-end;
+  padding: 12px 32px;
+  background: #c2e299;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.diary-submit:hover {
+  background: #a8d84f;
+  transform: translateY(-2px);
+}
+
+.diary-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.diary-entry {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #c2e299;
+}
+
+.diary-entry:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.entry-date {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.entry-content {
+  font-size: 16px;
+  color: #565656;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .diary {
+    padding: 40px 20px;
+  }
+
+  .diary-title {
+    font-size: 32px;
+  }
+
+  .diary-input-section {
+    padding: 16px;
+  }
+
+  .diary-textarea {
+    min-height: 120px;
+    font-size: 14px;
+  }
+
+  .entry-content {
+    font-size: 14px;
+  }
+}

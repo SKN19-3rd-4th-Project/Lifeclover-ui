@@ -1,0 +1,182 @@
+.header {
+  background: linear-gradient(135deg, #fef9e3 0%, #f9f6e8 100%);
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #c2e299 0%, #a8d84f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Paytone One', sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ecefe2;
+  padding: 16px 24px;
+  border-radius: 27px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.3s ease;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #c2e299;
+}
+
+.nav-divider {
+  color: #999;
+  font-size: 12px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 27px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.button-login,
+.button-signup {
+  background: #e8f3bc;
+  color: #828180;
+}
+
+.button-login:hover,
+.button-signup:hover {
+  background: #d4e899;
+  transform: translateY(-2px);
+}
+
+.button-logout {
+  background: #c2e299;
+  color: #333;
+}
+
+.button-logout:hover {
+  background: #a8d84f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .header .container {
+    padding: 0 20px;
+  }
+
+  .header-content {
+    gap: 20px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .nav {
+    max-width: 300px;
+  }
+
+  .nav-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    padding: 0 15px;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .nav {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
+    gap: 12px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

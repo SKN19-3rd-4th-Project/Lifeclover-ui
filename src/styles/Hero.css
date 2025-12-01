@@ -1,0 +1,153 @@
+/* Hero Section Styles */
+.hero {
+  background: linear-gradient(135deg, #fef9e3 0%, #f9f6e8 100%);
+  min-height: calc(100vh - 90px);
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-text-section {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 70px;
+  font-weight: 700;
+  color: #565656;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 16px;
+}
+
+.cta-button {
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.cta-button.primary {
+  background: #c2e299;
+  color: #333;
+}
+
+.cta-button.primary:hover {
+  background: #a8d84f;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(162, 196, 61, 0.3);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: #333;
+  border: 2px solid #c2e299;
+}
+
+.cta-button.secondary:hover {
+  background: #e8f3bc;
+}
+
+.hero-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clover-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-input-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.hero-input {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 -1px 37px rgba(0, 0, 0, 0.12);
+  font-family: 'Pretendard Variable', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.hero-input:focus {
+  outline: none;
+  box-shadow: 0 -1px 37px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .clover-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .cta-button {
+    padding: 12px 32px;
+    font-size: 16px;
+  }
+
+  .hero-input {
+    padding: 16px 16px;
+    font-size: 14px;
+  }
+
+  .clover-image {
+    max-width: 200px;
+  }
+}
