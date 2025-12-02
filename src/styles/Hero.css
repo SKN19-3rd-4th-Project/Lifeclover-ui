@@ -10,17 +10,18 @@
 
 .hero-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 0px;
+  gap: 20px;
   max-width: 1400px;
   margin: 0 auto;
+  margin-right: 15%;
   width: 100%;
 }
 
 .hero-text-section {
-  flex: 1;
-  margin-left: 60px;
+  flex: 0 1 auto;
+  text-align: right;
 }
 
 .hero-title {
@@ -51,6 +52,7 @@
 .hero-cta {
   display: flex;
   gap: 16px;
+  justify-content: flex-end;
 }
 
 .cta-button {
@@ -86,7 +88,7 @@
 }
 
 .hero-image-section {
-  flex: 1;
+  flex: 0 1 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,10 +136,15 @@
   .hero-container {
     flex-direction: column;
     gap: 40px;
+    margin-right: auto;
   }
 
   .hero-text-section {
-    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero-cta {
+    justify-content: center;
   }
 
   .hero-title {

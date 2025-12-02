@@ -3,26 +3,34 @@ import React from 'react';
 const Services: React.FC = () => {
   const services = [
     {
-      title: '알려줘요',
-      description: '궁금한 것들을 물어보세요',
-      icon: '🤔'
+      title: '장례 시설 안내',
+      description: (
+        <>
+          장례식장/봉안당/화장시설/묘지/자연장지 등의<br />장례 시설 정보를 제공합니다.
+        </>
+      ),
+      icon: '🏛️'
     },
     {
-      title: '대화해요',
-      description: '편하게 대화를 나눠보세요',
-      icon: '💬'
+      title: '지원 정책',
+      description: '공영장례, 화장 장려금 등의 정보를 제공합니다.',
+      icon: '🤝'
     },
     {
-      title: '다이어리',
-      description: '매일의 순간들을 기록하세요',
-      icon: '📔'
+      title: '유산 상속 안내',
+      description: '유산 상속 절차 및 법률 정보를 제공합니다.',
+      icon: '⚖️'
+    },
+    {
+      title: '디지털 개인 정보',
+      description: '디지털 계정 처리 방법에 대한 정보를 제공합니다.',
+      icon: '🔐'
     }
   ];
 
   return (
     <section className="services">
       <div className="container">
-        <h2 className="section-title">Lifeclover의 서비스</h2>
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">

@@ -14,7 +14,9 @@ body {
   color: #333;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
 }
@@ -43,8 +45,10 @@ main {
 .hero-text-section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* 가로 기준 중앙 */
-  text-align: center;  /* 텍스트까지 중앙 */
+  align-items: center;
+  /* 가로 기준 중앙 */
+  text-align: center;
+  /* 텍스트까지 중앙 */
 }
 
 /* 타이틀 문구 폰트 */
@@ -77,8 +81,10 @@ main {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .service-card {

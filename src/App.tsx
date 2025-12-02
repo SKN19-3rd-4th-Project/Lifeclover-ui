@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 
 // Components
@@ -23,7 +23,7 @@ function App() {
       />
 
       <main>
-        {currentPage === 'home' && <Hero />}
+        {currentPage === 'home' && <Hero currentPage={currentPage} setCurrentPage={setCurrentPage} />}
         {currentPage === 'services' && <Services />}
         {currentPage === 'chat' && <ChatBot />}
         {currentPage === 'diary' && <Diary />}

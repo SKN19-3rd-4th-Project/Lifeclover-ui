@@ -3,7 +3,7 @@ import '../styles/Hero.css';
 
 const imgLify3 = 'src/img/lify.png';
 
-const Hero: React.FC = () => {
+const Hero: React.FC<{ currentPage: 'home' | 'services' | 'chat' | 'diary'; setCurrentPage: (page: 'home' | 'services' | 'chat' | 'diary') => void; }> = ({ setCurrentPage }) => {
   return (
     <section className="hero">
       <div className="hero-container">
@@ -13,7 +13,9 @@ const Hero: React.FC = () => {
             클로버가 되어드릴게요
           </h1>
           <div className="hero-cta">
-            <button className="cta-button primary">지금 시작하기</button>
+            <button className="cta-button primary" onClick={() => setCurrentPage('services')}>
+              지금 시작하기
+            </button>
           </div>
         </div>
 
