@@ -13,27 +13,27 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage, isLoggedIn
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <div className="logo">
-            <img src="/logo.png" alt="Lifeclover" className="logo-image" />
+          <div className="logo" onClick={() => setCurrentPage('home')}>
+            <img src="src/img/logo.png" alt="Lifeclover" className="logo-image" />
             <span className="logo-text">Lifeclover</span>
           </div>
 
           <nav className="nav">
-            <button 
+            <button
               className={`nav-item ${currentPage === 'services' ? 'active' : ''}`}
               onClick={() => setCurrentPage('services')}
             >
               알려줘요
             </button>
             <span className="nav-divider">|</span>
-            <button 
+            <button
               className={`nav-item ${currentPage === 'chat' ? 'active' : ''}`}
               onClick={() => setCurrentPage('chat')}
             >
               대화해요
             </button>
             <span className="nav-divider">|</span>
-            <button 
+            <button
               className={`nav-item ${currentPage === 'diary' ? 'active' : ''}`}
               onClick={() => setCurrentPage('diary')}
             >
@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage, isLoggedIn
           <div className="header-actions">
             {!isLoggedIn ? (
               <>
-                <button 
+                <button
                   className="button button-login"
                   onClick={() => setIsLoggedIn(true)}
                 >
@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage, isLoggedIn
                 </button>
               </>
             ) : (
-              <button 
+              <button
                 className="button button-logout"
                 onClick={() => setIsLoggedIn(false)}
               >

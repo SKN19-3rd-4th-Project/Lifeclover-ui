@@ -7,7 +7,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import ChatBot from './components/ChatBot';
 import Diary from './components/Diary';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'services' | 'chat' | 'diary'>('home');
@@ -15,13 +15,13 @@ function App() {
 
   return (
     <div className="app">
-      <Header 
-        currentPage={currentPage} 
+      <Header
+        currentPage={currentPage}
         setCurrentPage={setCurrentPage}
         isLoggedIn={isLoggedIn}
         setIsLoggedIn={setIsLoggedIn}
       />
-      
+
       <main>
         {currentPage === 'home' && <Hero />}
         {currentPage === 'services' && <Services />}
@@ -29,7 +29,7 @@ function App() {
         {currentPage === 'diary' && <Diary />}
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
