@@ -13,7 +13,13 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage, isLoggedIn
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <div className="logo" onClick={() => setCurrentPage('home')}>
+          <div className="logo" onClick={() => {
+            if (currentPage === 'home') {
+              window.location.reload();
+            } else {
+              setCurrentPage('home');
+            }
+          }}>
             <img src="src/img/logo.png" alt="Lifeclover" className="logo-image" />
             <span className="logo-text">Lifeclover</span>
           </div>

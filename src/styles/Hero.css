@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 0px;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -20,10 +20,11 @@
 
 .hero-text-section {
   flex: 1;
+  margin-left: 60px;
 }
 
 .hero-title {
-  font-size: 70px;
+  font-size: 56px;
   font-weight: 700;
   color: #565656;
   line-height: 1.2;
@@ -135,8 +136,12 @@
     gap: 40px;
   }
 
+  .hero-text-section {
+    margin-left: 0;
+  }
+
   .hero-title {
-    font-size: 48px;
+    font-size: 38px;
   }
 
   .clover-image {
@@ -150,7 +155,7 @@
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 29px;
   }
 
   .cta-button {
